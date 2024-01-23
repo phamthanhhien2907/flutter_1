@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:untitled2/MyApp.dart';
 import 'package:untitled2/components/Cards/card_11.dart';
 import 'package:untitled2/pages/App/Person/favorite.dart';
+import 'package:untitled2/pages/Sign_In-Sign_Up/sigin_choose.dart';
 import 'package:untitled2/pages/Splash/splash_basehall.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:untitled2/components/Footer/button.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: button(),
+      home: sigin_choose(),
     );
   }
 }
